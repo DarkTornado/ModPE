@@ -3,9 +3,10 @@ Blocklauncher Error Fix
 © 2017 Dark Tornado, All rights reserved.
 
 <Fixed Functions>
-entityAddedHook : Admin could be detected, but clients are not.
 newLevel : Fixed, but parameter 'hasLevel' is not fixed.
 selectLevelHook : Fixed.
+entityAddedHook : Admin could be detected, but clients are not.
+entityRemovedHook : Entity which is removed but didn't call entityRemovedHook is Fixed.
 Entity.getAll(); : Admin could be detected, but clients are not.
 Server.getAllPlayers(); : Admin could be detected, but clients are not.
 Server.getAllPlayerNames(); : Admin could be detected, but clients are not.
@@ -13,9 +14,10 @@ Level.getWorldName(); : Fixed.
 Level.getWorldDir(); : Fixed.
 
 <고친 함수들>
-entityAddedHook : 서버장은 인식. 서버원은 아직 인식 X.
 newLevel : 정상 작동. 단, hasLevel 매개변수 예외.
 selectLevelHook : 정상 작동.
+entityAddedHook : 서버장은 인식. 서버원은 아직 인식 X.
+entityRemovedHook : 사라졌는데 사라진걸로 인식되지 않는 엔티티가 인식되도록 수정.
 Entity.getAll(); : 서버장은 인식. 서버원은 아직 인식 X.
 Server.getAllPlayers(); : 서버장은 인식. 서버원은 아직 인식 X.
 Server.getAllPlayerNames(); : 서버장은 인식. 서버원은 아직 인식 X.
