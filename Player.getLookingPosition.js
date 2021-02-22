@@ -17,7 +17,7 @@ Player.getLookingPosition = function(limit, blockIds) {
     tan = -Math.sin(pitch / 180 * Math.PI);
     pcos = Math.cos(pitch / 180 * Math.PI);
     for (var n = 0; n < limit; n++) {
-        if (blockIds.indexOf(getTile(px + n * sin * pcos, py + n * tan, pz + n * cos * pcos)) == -1) {
+        if (blockIds.indexOf(getTile(px + n * sin * pcos, py + n * tan, pz + n * cos * pcos)) == -1) { //Cannot use Array.prototype.includes(); method in BlockLaucher
             return [px + n * sin * pcos, py + n * tan, pz + n * cos * pcos];
         }
     }
@@ -29,8 +29,8 @@ Player.getLookingPosition = function(limit, blockIds) {
 function useItem(x, y, z, i, b) {
     if (i == 280) {
         var pos = Player.getLookingPosition(50);
-        if (pos == null) clientMessage("Destination is too far.");
-        else Entity.setPosition(Player.getEntity(), pos[0], pos[1] + 1, pos[2]);
+        if (pos == null) clientMessage("Destination is too far. Limit is 50 blocks.");
+        else Entity.setPosition(Player.getEntity(), pos[0], pos[1] + 3, pos[2]);
     }
 }
 
