@@ -22,9 +22,9 @@
 * `newLevel` is not working.
   * It was fixed, but parameter `hasLevel`'s value is not fixed.
 * `entityAddedHook` cannot detect player.
-  * It was fixed, but it only detect `Admin`.
+  * It was fixed, but it only detects `Admin`.
 * `Entity.getAll();`, `Server.getAllPlayers();`, `Server.getAllPlayerNames();` do not return player.
-  * It was fixed, but they only  contain `Admin`.
+  * It was fixed, but they only contain `Admin`.
 
 ### [PineTree.js](PineTree.js)
 * 막대기로 터치한 곳에 소나무 생성
