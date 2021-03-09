@@ -30,6 +30,9 @@
 * 막대기로 터치한 곳에 소나무 생성
 * 명령어 `/pine [종류]`를 통해 생성할 소나무의 종류 선택 가능. 종류는 1~4 사이의 정수
 * 명령어 `/pine off`를 통해 막대기로 블록을 터치해도 소나무가 생성되지 않도록 설정 가능
+* Create a pine tree where you touched it with a stick.
+* Select type of pine tree by command `/pine [type]`. Type is 1~4.
+* Disable creating pine tree by command `/pine off`.
 
 ### [Player.getLookingPosition.js](Player.getLookingPosition.js)
 * 플레이어가 바라보고 있는 블록의 좌표를 배열로 반환
